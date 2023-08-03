@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero, About, Projects, Contact, Test, Skills } from "@/components";
+import { Hero, About, Contact, Skills } from "@/components";
 import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
