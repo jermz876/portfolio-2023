@@ -1,15 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Todos from "../public/assets/todos.png";
 import Data from "../public/assets/dataPage.png";
 import Weather from "../public/assets/weatherApp.png";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
     return (
         <section id="portfolio" className="w-full  text-white ">
-            <div className="max-w-5xl w-full h-full mx-auto px-6 py-20 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#ccd6f6] border-b-4 border-b-pink-600  max-w-fit mb-2">Portfolio</h2>
-                <p className="text-xl md:text-2xl font-semibold text-[#ccd6f6] mb-6">Check out some of my recent work </p>
+            <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 1.5, delay: 0.2 }}
+                className="max-w-5xl w-full h-full mx-auto px-6 py-24 flex flex-col justify-center"
+            >
+                <h2 className="text-3xl md:text-4xl font-bold text-[#ccd6f6] border-b-4 border-b-blue-500  max-w-fit mb-10">Portfolio</h2>
 
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                     <div className=" overflow-hidden shadow-lg  transition-all hover:scale-105 duration-500  rounded-lg max-w-[420px] mx-auto">
@@ -23,7 +30,7 @@ const Portfolio = () => {
                         </div>
                         <div className="px-6 pt-4 pb-2 bg-slate-800">
                             <a href="https://todos-2023.vercel.app/">
-                                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Demo</span>
+                                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">View Demo</span>
                             </a>
                         </div>
                     </div>
@@ -37,7 +44,7 @@ const Portfolio = () => {
                         </div>
                         <div className="px-6 pt-4 pb-2 bg-slate-800">
                             <a href="https://weather-api-app-theta.vercel.app/">
-                                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Demo</span>
+                                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">View Demo</span>
                             </a>
                         </div>
                     </div>
@@ -51,12 +58,12 @@ const Portfolio = () => {
                         </div>
                         <div className="px-6 pt-4 pb-2 bg-slate-800">
                             <a href="https://data-landing-page-2.vercel.app/">
-                                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Demo</span>
+                                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">View Demo</span>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };
