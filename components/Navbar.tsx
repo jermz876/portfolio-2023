@@ -13,12 +13,12 @@ const Navbar = () => {
     };
 
     return (
-        <header className="sticky top-0 w-full z-10  ">
-            <nav className=" h-14 bg-gray-800 text-white shadow-lg ">
+        <header className="sticky top-0 w-full z-10over:border-b-1 hover:border-blue-100  ">
+            <nav className="h-14 bg-transparent backdrop-blur-sm text-white   ">
                 <div className=" flex justify-between items-center max-w-7xl mx-auto w-full h-full px-8 ">
                     {/* LOGO */}
                     <a href="/">
-                        <h2 className="text-blue-500 font-bold text-2xl ">J-Binns</h2>
+                        <h2 className="text-white font-bold text-2xl ">J-Binns</h2>
                     </a>
 
                     {/* NAV Links */}
@@ -47,7 +47,7 @@ const Navbar = () => {
                 <div
                     className={
                         nav
-                            ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-gray-800 p-10  ease-in duration-300"
+                            ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-blue-600 p-10  ease-in duration-300"
                             : "fixed left-[-100%] top-0 w-[65%]  h-screen ease-in duration-300 "
                     }
                 >
