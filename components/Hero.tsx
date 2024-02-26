@@ -11,9 +11,9 @@ const Hero = () => {
         <section id="/#hero">
             <motion.div initial={{ opacity: 0, y: -75 }} animate={{ opacity: 1, y: 0 }} transition={{ ease: "easeOut", duration: 1 }} className="w-full h-screen">
                 <div className="max-w-5xl w-full h-full mx-auto px-6 flex flex-col justify-center">
-                    <p className="md:text-5xl text-2xl text-white ">Hi There 👋 I'm</p>
+                    <p className="md:text-4xl text-2xl text-white ">Hi There 👋 I'm</p>
                     <h1 className="text-4xl md:text-7xl font-bold text-white">Jeremie Binns</h1>
-                    <h2 className="text-2xl md:text-5xl font-bold text-[#ccd6f6]">
+                    <h2 className="text-2xl md:text-4xl font-bold text-[#ccd6f6]">
                         <span className=" bg-gradient-to-tl from-blue-400 to-blue-500 bg-clip-text text-transparent">
                             <ReactTyped strings={["Web Developer", "Problem Solver", "Force User"]} typeSpeed={95} backSpeed={50} loop />{" "}
                         </span>
@@ -22,7 +22,7 @@ const Hero = () => {
                     <p className="text-[#ccd6f6] my-2 w-2/3 ">Front-End Web Developer bringing conceptual ideas and designs to life.</p>
                     <div className="text-white">
                         <Link href={"/#about"} className="inline-block">
-                            <button className="group border-2 px-5 py-2 my-2 flex items-center hover:bg-indigo-500 hover:border-indigo-500 ">
+                            <button className="group rounded-lg border-2 px-5 py-2 my-2 flex items-center hover:bg-indigo-500 hover:border-indigo-500 ">
                                 About me{" "}
                                 <span className=" ml-2 group-hover:rotate-90 duration-300">
                                     <HiArrowNarrowRight />
