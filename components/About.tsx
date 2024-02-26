@@ -13,7 +13,7 @@ const About = () => {
                 transition={{ ease: "easeOut", duration: 1.5, delay: 0.2 }}
                 className="max-w-5xl w-full h-full  mx-auto px-6 lg:pt-14 lg:pb-28 flex flex-col justify-center "
             >
-                <h2 className="text-3xl md:text-4xl font-bold text-[#ccd6f6] border-b-4 border-b-blue-500  max-w-fit mb-2">About Me</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white  border-b-4 border-b-blue-500  max-w-fit mb-2">About Me</h2>
 
                 <p className="text-lg font-semibold">
                     <br />

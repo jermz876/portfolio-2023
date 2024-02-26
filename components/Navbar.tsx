@@ -23,7 +23,7 @@ const Navbar = () => {
 
                     {/* NAV Links */}
                     <div>
-                        <ul className=" hidden md:flex gap-8 ">
+                        <ul className=" hidden md:flex gap-8 font-semibold ">
                             <Link href="#about">
                                 <li className="text-md uppercase  hover:text-blue-300 ">About</li>
                             </Link>

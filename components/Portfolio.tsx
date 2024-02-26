@@ -9,14 +9,14 @@ import { motion } from "framer-motion";
 
 const Portfolio = () => {
     return (
-        <section id="portfolio" className="w-full  text-white ">
+        <section id="portfolio" className="w-full  text-[#ccd6f6] ">
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 1.5, delay: 0.2 }}
                 className="max-w-5xl w-full h-full mx-auto px-6 py-24 flex flex-col justify-center"
             >
-                <h2 className="text-3xl md:text-4xl font-bold text-[#ccd6f6] border-b-4 border-b-blue-500  max-w-fit mb-10">Portfolio</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white  border-b-4 border-b-blue-500  max-w-fit mb-10">Portfolio</h2>
 
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                     <div className=" overflow-hidden shadow-lg  transition-all hover:scale-105 duration-500  rounded-lg max-w-[420px] mx-auto">
